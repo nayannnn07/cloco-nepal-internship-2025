@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph and Button</title>
+    <style>
+        body{
+            font-size: 20px;
+            padding: 10px;
+        }
+        button{
+            background: pink;
+            font-size: 20px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="oldPara">
+        This is a paragraph.
+    </p>
+
+    <button onclick="changeClick(this)">Click Me!</button>
+    <script>
+        function changeClick(button){
+            //Change the paragraph content on click.
+            document.getElementById("oldPara").innerHTML ="This is the changed paragraph content.";
+
+            //Add paragraph dynamically on each click.
+            const newParagraph = document.createElement("p");
+            newParagraph.innerHTML = "This is the new paragraph.";
+
+            document.body.appendChild(newParagraph);
+                
+            //Toggle the background color of button on each click.
+            if (button.style.backgroundColor === "orange") {
+                button.style.backgroundColor = "pink";
+            } else {
+                button.style.backgroundColor = "orange";
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
