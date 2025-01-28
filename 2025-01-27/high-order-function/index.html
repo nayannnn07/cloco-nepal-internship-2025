@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Grocery Details</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Grocery List</h1>
+      <ul id="food-list"></ul>
+      <div id="food-detail" style="display: none">
+        <h1 id="food-name"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="food-data"></tbody>
+        </table>
+        <div class="summary" id="total-cost"></div>
+        <button class="back-button" id="back-button">Back to List</button>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
