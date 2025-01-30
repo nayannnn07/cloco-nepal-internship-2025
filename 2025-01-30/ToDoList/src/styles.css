@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 100px;
+}
+
+.app-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) {
+    background-color: #28a745;
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; 
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 10px; 
+}
